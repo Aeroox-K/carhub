@@ -74,27 +74,27 @@ export const manufacturers = [
     {
       title: "About",
       links: [
-        { title: "How it works", url: "/" },
-        { title: "Featured", url: "/" },
+        { title: "How it works", url: "/about" },
+        { title: "Featured", url: "/about" },
         // { title: "Partnership", url: "/" },
         // { title: "Bussiness Relation", url: "/" },
       ],
     },
-    {
-      title: "Company",
-      links: [
-        { title: "Events", url: "/" },
-        { title: "Blog", url: "/" },
-        // { title: "Podcast", url: "/" },
-        // { title: "Invite a friend", url: "/" },
-      ],
-    },
+    // {
+    //   title: "Company",
+    //   links: [
+    //     { title: "Events", url: "/" },
+    //     { title: "Blog", url: "/" },
+    //     // { title: "Podcast", url: "/" },
+    //     // { title: "Invite a friend", url: "/" },
+    //   ],
+    // },
     {
       title: "Socials",
       links: [
         // { title: "Discord", url: "/" },
-        { title: "Instagram", url: "/" },
-        { title: "Twitter", url: "/" },
+        { title: "Instagram", url: "" },
+        { title: "Twitter", url: "" },
         // { title: "Facebook", url: "/" },
       ],
     },
