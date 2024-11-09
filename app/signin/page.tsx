@@ -13,27 +13,27 @@ export default function SignIn() {
   };
 
   return (
-    <section className="py-28">
-    <div className='flex flex-col items-center ' >
+    <section className="py-28 ">
+    <div className='flex flex-col items-center  ' >
 
     <div className="text-center">
-        <h1 className='text-[28px] font-bold'>Sign in to your account</h1>
-        <p className="mt-1">
+        <h1 className='md:text-[28px] text-[20px] font-bold'>Sign in to your account</h1>
+        <p className="mt-1 px-4 md:text-[16px] text-[13px]">
           Enter your email and password below to access your account.
         </p>
     </div>
       
-    <div className='py-16 px-10 my-10 bg-gray-100 rounded-md' >
-        <form action="submit" className='flex flex-col justify-center items-center' >
+    <div className='py-10 px-6 my-10 md:w-1/3  bg-gray-100 rounded-md' >
+        <form action="submit" className='flex flex-col' >
         
-        <div className="mb-5">
+        <div className="mb-5 ">
             <div className='mb-1' >
                 <label htmlFor="email">Email address</label>
             </div>
 
 
             <div className=''>
-            <input className='py-2 px-3 outline-none w-[350px] rounded-md bg-white' id="email" placeholder="name@example.com" type="email" required />
+            <input className='py-2 px-3 outline-none w-full rounded-md bg-white' id="email" placeholder="name@example.com" type="email" required />
             </div>
 
         </div>
@@ -44,7 +44,7 @@ export default function SignIn() {
             </div>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
             <div className='flex flex-row-reverse justify-between '>
-             <input className='py-2 px-3 outline-none active:bg-white w-[350px] text-left rounded-md bg-white' id="password" placeholder="********" type={passwordVisible ? 'text' : 'password'} required pattern= ".{8}" title="Must contain at least 8 or more characters"/>
+             <input className='py-2 px-3 outline-none w-full active:bg-white text-left rounded-md bg-white' id="password" placeholder="********" type={passwordVisible ? 'text' : 'password'} required pattern= ".{8}" title="Must contain at least 8 or more characters"/>
                 <button className='absolute mr-4 mt-3' onClick={togglePasswordVisibility}>  
                 {passwordVisible
                 ?  <FaEye  />
@@ -62,7 +62,7 @@ export default function SignIn() {
 
     </div>
 
-        <div><p>Do you have an account? <Link className="text-blue-400" href= "signup" >SignUp</Link></p></div>
+        <div><p>Want to create an account? <Link className="text-blue-400" href= "signup" >SignUp</Link></p></div>
 
     </div>
     </section>

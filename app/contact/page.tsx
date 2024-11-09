@@ -17,8 +17,9 @@ export default function Contact() {
       };
     
       const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        // e.preventDefault();
-        // Handle form submission logic here (e.g., send data to an API)
+        e.preventDefault();
+        alert("submitted")
+        // Handle form submission logic here (or send data to an API)
         console.log('Form submitted:', formData);
       };
 
@@ -76,7 +77,6 @@ export default function Contact() {
             <CustomButton 
             title = "Send Message"
             btnType='submit'
-            handleClick={handleSubmit}
             containerStyles="bg-primary-blue text-white rounded-full mt-10"
             /> 
           </form>

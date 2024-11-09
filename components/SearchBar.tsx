@@ -61,6 +61,7 @@ const SearchBar = () => {
 
   return (
     <form className='searchbar' onSubmit={handleSearch}>
+        
         <div className='searchbar__item'>
             <SearchManufacturer 
                 manufacturer = {manufacturer}
@@ -68,7 +69,8 @@ const SearchBar = () => {
             />
             <SearchButton otherClasses="sm:hidden" />
         </div>
-        <div className='searchbar___item' >
+
+        <div className='searchbar___item ' >
           <Image 
             src="/model-icon.png"
             alt='model-icon'
@@ -90,6 +92,7 @@ const SearchBar = () => {
           </div>
           
         </div>
+
         <SearchButton otherClasses='max-sm:hidden' />
     </form>
   )
