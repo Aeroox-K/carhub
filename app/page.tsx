@@ -28,6 +28,7 @@ export default async function Home({ searchParams }) {
               Car Catalogue
             </h1>
             <p>Explore the cars you might like</p>
+            <p className="text-red-500 text-sm font-semibold">&#40;Our car image APIs are currently offline&#41;</p>
           </div>
 
 

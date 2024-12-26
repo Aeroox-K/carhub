@@ -20,6 +20,9 @@ const Hero = () => {
             <p className="hero__subtitle">
               streamline your car rental experience with our effortless booking process
             </p>
+
+            <p className="font-semibold text-[20px] mt-4 text-red-500 ">&#40;Car Rent Feature Coming Soon&#41;</p>
+
     
             <div>
 

@@ -6,10 +6,10 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 
 export default function SignIn() {
-    const [passwordVisible, setPasswordVisible] = useState(false);
 
-  const togglePasswordVisibility = () => {
-    setPasswordVisible (!passwordVisible);
+    const [passwordVisible, setPasswordVisible] = useState(false);
+    const togglePasswordVisibility = () => {
+        setPasswordVisible (!passwordVisible);
   };
 
   return (
@@ -24,6 +24,7 @@ export default function SignIn() {
     </div>
       
     <div className='py-10 px-6 my-10 md:w-1/3  bg-gray-100 rounded-md' >
+        
         <form action="submit" className='flex flex-col' >
         
         <div className="mb-5 ">
@@ -44,19 +45,23 @@ export default function SignIn() {
             </div>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
             <div className='flex flex-row-reverse justify-between '>
-             <input className='py-2 px-3 outline-none w-full active:bg-white text-left rounded-md bg-white' id="password" placeholder="********" type={passwordVisible ? 'text' : 'password'} required pattern= ".{8}" title="Must contain at least 8 or more characters"/>
+             <input className='py-2 px-3 outline-none w-full active:bg-white text-left rounded-md bg-white' id="password" placeholder="********" type={passwordVisible ? 'text' : 'password'} 
+                required 
+                pattern='(?=.*[a-z])[A-Za-z\d@$!%*?&]{8,}' 
+                title='Must contain at least 8 character'              />
                 <button className='absolute mr-4 mt-3' onClick={togglePasswordVisibility}>  
                 {passwordVisible
                 ?  <FaEye  />
                 :  <FaEyeSlash />
-                } 
+                }
                 </button>
             </div>       
         </div>
 
-            <button className='mt-4 w-full rounded-md font-semibold text-white py-2 bg-blue-400' type="submit">
-            <Link href="/">Sign in</Link>
-            </button>
+        <button className='mt-4 w-full rounded-md font-semibold text-white py-2 bg-blue-400' type='submit'>
+        <Link href="/">Sign in</Link>
+        </button>
+        
 
         </form>
 
